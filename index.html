@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="/favicon.png">
+    <title>Hangmen Alchogol Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Подсчет ингредиентов для алкоголя</h1>
+        <div class="inputs">
+            <select name="drink" id="drink">
+                <option value="appleCider">Яблочный сидр</option>
+                <option value="whiskey">Виски</option>
+                <option value="bourbon">Бурбон</option>
+                <option value="brandy">Бренди</option>
+                <option value="scotch">Скотч</option>
+                <option value="calvados">Кальвадос</option>
+            </select>
+            <input id="quantity" type="number">
+            <button id="add-button">Добавить</button>
+        </div>
+        <div class="result-table">
+            <table>
+                <tr>
+                    <td>Яблоко</td>
+                    <td>Сахар</td>
+                    <td>Пшеница</td>
+                    <td>Агарита</td>
+                    <td>Кукуруза</td>
+                    <td>Черная смородина</td>
+                    <td>Гекльберри</td>
+                    <td>Ежевика</td>
+                    <td>Тысячелистник</td>
+                    <td>Вода</td>
+                    <td>Алкоголь</td>
+                    <td>Яблочное пюре</td>
+                    <td>Яблочный сидр</td>
+                </tr>
+                <tr>
+                    <td id="apple">0</td>
+                    <td id="sugar">0</td>
+                    <td id="weat">0</td>
+                    <td id="agarita">0</td>
+                    <td id="corn">0</td>
+                    <td id="black-currant">0</td>
+                    <td id="huckleberry">0</td>
+                    <td id="blackberry">0</td>
+                    <td id="yarrow">0</td>
+                    <td id="water">0</td>
+                    <td id="alchogol">0</td>
+                    <td id="apple-mash">0</td>
+                    <td id="apple-cider">0</td>
+                </tr>
+            </table>
+
+            <hr>
+
+            <div class="alchogol-calc">
+                <h1>Подсчет ингредиентов для алкоголя</h1>
+                <div class="alchogol-inputs">
+                    <label for="">Количество алкоголя:</label>
+                    <input id="alchogol-quantity" step="2" min="2" value="2" type="number">
+                    <button id="add-alchogol-button">Добавить</button>
+                </div>
+                <div class="alchogol-table">
+                    <table>
+                        <tr>
+                            <td>Тысячелистник</td>
+                            <td>Гекльберри</td>
+                            <td>Вода</td>
+                            <td>Ежевика</td>
+                        </tr>
+                        <tr>
+                            <td id="alchogol-yarrow">0</td>
+                            <td id="alchogol-huckleberry">0</td>
+                            <td id="alchogol-water">0</td>
+                            <td id="alchogol-blackberry">0</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    
+    
+</body>
+<script src="index.js"></script>
+<script src="alchogolCalc.js"></script>
+</html>

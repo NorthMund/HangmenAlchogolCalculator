@@ -1,0 +1,41 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+*, td, label{
+    font-size: 20px;
+    font-family: 'Monserrat';
+}
+
+body{
+    /* background-color: #bada55; */
+}
+
+h1 {
+    font-family: 'Monserrat';
+    font-size: 24px;
+    margin:5px 0px;
+}
+
+.inputs {
+    margin: 10px 0px;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+td{
+    border: 1px solid black;
+    padding: 5px;
+    margin: 5px;
+}
+
+hr{
+    border: 1px solid black;
+    width: 100%;
+}
+
+.alchogol-table {
+    margin-top: 10px;
+}
