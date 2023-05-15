@@ -22,6 +22,7 @@
             </select>
             <input id="quantity" type="number">
             <button id="add-button">Добавить</button>
+            <button id="all-clear-button">Сбросить</button>
         </div>
         <div class="result-table">
             <table>
@@ -40,7 +41,7 @@
                     <td>Яблочное пюре</td>
                     <td>Яблочный сидр</td>
                 </tr>
-                <tr>
+                <tr class="ingredients">
                     <td id="apple">0</td>
                     <td id="sugar">0</td>
                     <td id="weat">0</td>
@@ -65,6 +66,7 @@
                     <label for="">Количество алкоголя:</label>
                     <input id="alchogol-quantity" step="2" min="2" value="2" type="number">
                     <button id="add-alchogol-button">Добавить</button>
+                    <button id="alch-clear-button">Сбросить</button>
                 </div>
                 <div class="alchogol-table">
                     <table>
@@ -74,7 +76,7 @@
                             <td>Вода</td>
                             <td>Ежевика</td>
                         </tr>
-                        <tr>
+                        <tr class="alch-ing">
                             <td id="alchogol-yarrow">0</td>
                             <td id="alchogol-huckleberry">0</td>
                             <td id="alchogol-water">0</td>

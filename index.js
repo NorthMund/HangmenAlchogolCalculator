@@ -116,7 +116,9 @@ const appleCiderRow = document.querySelector('#apple-cider');
 
 let drink = document.querySelector('#drink');
 let quantity = document.querySelector('#quantity');
+const clearBtn = document.querySelector('#all-clear-button');
 const addBtn = document.querySelector('#add-button');
+clearBtn.addEventListener('click',clearIng);
 addBtn.addEventListener('click',handleAddClick);
 drink.addEventListener('change',changeQuantity);
 
@@ -198,8 +200,11 @@ function refreshTdValue(cell,value){
     cell.innerHTML = buffer + value;
 }
 
-// for (key in appleCider){
-//     console.log('key: ',key,'value: ',appleCider[key])
-// }
+function clearIng(){
+    let tds = document.querySelectorAll('.ingredients td');
+    for (let i = 0;i<tds.length;i++){
+        tds[i].innerHTML = 0;
+    }
+}
 
 changeQuantity()

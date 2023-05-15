@@ -2,9 +2,10 @@ let alchYarrow = document.querySelector('#alchogol-yarrow');
 let alchHuckleberry = document.querySelector('#alchogol-huckleberry');
 let alchWater = document.querySelector('#alchogol-water');
 let alchBlackberry = document.querySelector('#alchogol-blackberry');
-
+const alchClearBtn = document.querySelector('#alch-clear-button');
 const addAlchButton = document.querySelector('#add-alchogol-button');
-addAlchButton.addEventListener('click',handleAddClick)
+addAlchButton.addEventListener('click',handleAddClick);
+alchClearBtn.addEventListener('click',clearIng);
 
 
 let alchogolIng = {
@@ -34,3 +35,9 @@ function refreshTdValue(cell,value){
     cell.innerHTML = buffer + value;
 }
 
+function clearIng(){
+    let tds = document.querySelectorAll('.alch-ing td');
+    for (let i = 0;i<tds.length;i++){
+        tds[i].innerHTML = 0;
+    }
+}
